@@ -1,0 +1,133 @@
+.subTaskInput{
+    display: none;
+}
+
+.submitSubBtn{
+    display: none;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 5px;
+}
+
+button.submitMainBtn {
+    background-color: #007bff;
+    color: white;
+}
+
+button.submitMainBtn:hover {
+    background-color: #0056b3;
+}
+
+button.submitSubBtn {
+    background-color: #28a745;
+    color: white;
+}
+
+button.submitSubBtn:hover {
+    background-color: #218838;
+}
+
+button.resetBtn {
+    background-color: #ffc107;
+    color: white;
+}
+
+button.resetBtn:hover {
+    background-color: #e0a800;
+}
+
+/* Main task and subtask containers */
+.displayedMain {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.displayedSub {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Subtask list items */
+.subtask {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+.subtask span {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.subtask button {
+    flex: 1;
+    margin-left: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: white;
+}
+
+.subtask button:first-of-type {
+    background-color: #28a745;
+}
+
+.subtask button:first-of-type:hover {
+    background-color: #218838;
+}
+
+.subtask button:last-of-type {
+    background-color: #ffc107;
+}
+
+.subtask button:last-of-type:hover {
+    background-color: #e0a800;
+}
+

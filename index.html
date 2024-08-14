@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasked</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <form id="tasksForm">
+
+        <div class="mainTaskInput">
+            <label for="mainTask">Main Task:</label>
+            <input type="text" id="mainTask" name="mainTaskName" required>
+            <label for="mainTaskDuration">Main Task duration(min):</label>
+            <input type="number" id="mainTaskDuration" name="mainTaskDuration"  min="1" max="1440" required>
+        </div>
+
+        <div class="subTaskInput">
+            <label for="subtask">subtask:</label>
+            <input type="text" id="subTask" name="subTaskName" required>
+    
+            <label for="subTaskDuration">subtask duration(min):</label>
+            <input type="number" id="subTaskDuration" name="subTaskDuration" required>
+        </div>
+    
+        <button type="submit" class="submitMainBtn">Submit</button>
+        <button type="submit" class="submitSubBtn">Submit</button>
+        <button type="reset" class="resetBtn">Reset</button>
+        
+    </form>
+
+    <div class="displayed">
+        <div class="displayedMain">
+            
+            <div class="displayedSub">
+                <ol id="listOfSubTasks"></ol>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>    
+</body>
+
+</html>
+
